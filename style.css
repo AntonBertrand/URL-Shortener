@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: hsl(180, 66%, 49%);
+    --primary-dark: hsl(257, 27%, 26%);
+    --secondary: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --violet: hsl(257, 7%, 63%);
+    --dark-blue: hsl(255, 11%, 22%);
+    --dark-violet: hsl(260, 8%, 14%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.navbar .left-side {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.navbar .right-side {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--violet);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10rem;
+    padding: 10px 25px 10px 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.navbar img {
+    padding-top: 10px;
+}
+
+.container {
+    width: 100%;
+}
+
+.container .hero {
+    display: flex;
+    padding: 10%;
+}
+
+.container .hero .left-side {
+    width: 50%;
+}
+
+.container .hero .left-side h1{
+    font-size: 5vw;
+    font-weight: 800;
+    color: var(--dark-violet);
+}
+
+.container .hero .left-side p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: var(--violet);
+}
+
+.container .hero .left-side button{
+    margin-top: 20px;
+    font-size: 1.4vw;
+}
+
+.container .hero .right-side{
+    width: 50%;
+}
+
+.container .hero .right-side img{
+    width: 100%;
+    padding-left: 10%;
+}
+
+.container .link-shortener {
+    width: 75%;
+    height: 8rem;
+    background: rgba(58,48,83,255);
+    background-image: url(images/bg-boost-desktop.svg);
+    background-size: 100%;
+    border-radius: 0.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .link-shortener button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.2rem;
+    height: 3vw;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    letter-spacing: 1px;
+}
+
+.container .link-shortener input {
+    width: 50vw;
+    height: 3vw;
+    border-radius: 0.2rem;
+    border: none;
+}
