@@ -59,6 +59,10 @@ body {
     display: none;
 }
 
+.mobile-menu { 
+    display: none;
+}
+
 .btn-primary {
     background: var(--primary);
     color: white;
@@ -315,6 +319,11 @@ button:hover {
         display: block;
     }
 
+    .navbar .mobile-nav:hover {
+        cursor: pointer;
+    }
+    
+
     .navbar .left-side .nav-pages {
         display: none;
     }
@@ -427,5 +436,42 @@ button:hover {
         flex-direction: column;
         text-align: center;
     }
-    
+
+    .mobile-menu {
+        height: 350px;
+        width: 150px;
+        background: rgba(58,48,83,255);
+        position: absolute;
+        right: 0;
+        top: -5px;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+
+    .mobile-menu ul {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .mobile-menu a {
+        color: white;
+    }
+
+    .mobile-menu li {
+        padding-top: 35px;
+    }
+
+    .mobile-menu .close-menu {
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+    }
+
+    .mobile-menu .close-menu:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
 }

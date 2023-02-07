@@ -22,7 +22,18 @@
       </ul>
 
 
-      <img class="mobile-nav" style="width: 20px;" src="images/bars-solid.svg">
+      <img class="mobile-nav" onclick="openMobileNav()" style="width: 20px;" src="images/bars-solid.svg">
+
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#"><button class="btn-primary">Sign up</button></a></li>
+          <p class="close-menu" onclick="closeMobileNav()">X</p>
+        </ul>
+      </div>
 
       <ul class="right-side">
         
@@ -151,6 +162,6 @@
     
   </main>
 
-
+<script src="main.js"></script>
 </body>
 </html>
