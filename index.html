@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
   <title>Shortly URL shortener</title>
   <link rel="stylesheet" href="style.css">
@@ -14,12 +14,18 @@
     <div class="navbar">
       <ul class="left-side">
         <li><img src="images/logo.svg" alt=""></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Resources</a></li>
+        <div class="nav-pages">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+        </div>
       </ul>
 
+
+      <img class="mobile-nav" style="width: 20px;" src="images/bars-solid.svg">
+
       <ul class="right-side">
+        
         <li><a href="#">Login</a></li>
         <li><a href="#"><button class="btn-primary">Sign up</button></a></li>
       </ul>
@@ -44,19 +50,102 @@
         
       </div>
     </div>
+    
 
     <div class="container">
-
       <div class="link-shortener">
         <form>
-          <input type="text">
+          <input type="text" placeholder="Shorten a link here...">
           <button>Shorten It!</button>
         </form>
       </div>
     </div>
 
-    <div class="container" style="height: 100vh;">
+    <div class="container">
+      <div class="statistics">
+        <div class="statistics-header">
+          <h2>Advanced Statistics</h2>
+          <p>Track how your links are performing across the web</p>
+          <p>with our advanced Statistics dashboard</p>
+        </div>
+        <div class="cards">
 
+          <div class="card">
+            <div class="icon-bg">
+              <img src="images/icon-brand-recognition.svg" alt="">
+            </div>
+            <h3>Brand Recognition</h3>
+            <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon-bg">
+              <img src="images/icon-detailed-records.svg" alt="">
+            </div>
+            <h3>Detailed Records</h3>
+            <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+            <div class="blue-line"></div>
+          </div>
+
+          <div class="card">
+            <div class="icon-bg">
+              <img src="images/icon-fully-customizable.svg" alt="">
+            </div>
+            <h3>Fully Customizable</h3>
+            <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="boost-links">
+        <h2>Boost Your Links Today</h2>
+        <button class="btn-primary">Get Started</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer">
+
+        
+        <p style="font-size: 32px;">Shortly</p>
+        
+        
+        <ul class="features">
+          <p>Features</p>
+          <li><a href="#">Link Shortening</a></li>
+          <li><a href="#">Branded Links</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+
+        <ul class="Resources">
+          <p>Features</p>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+
+        <ul class="Company">
+          <p>Features</p>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="socials">
+          <img  class="social" src="images/icon-facebook.svg" alt="">
+          <img class="social" src="images/icon-twitter.svg" alt="">
+          <img class="social" src="images/icon-pinterest.svg" alt="">
+          <img class="social" src="images/icon-instagram.svg" alt="">
+        </div>
+
+      </div>
     </div>
 
     

@@ -17,6 +17,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: #e9e9e9;
 }
 
 .navbar {
@@ -30,8 +31,13 @@ body {
 .navbar .left-side {
     display: flex;
     align-items: center;
-    gap: 40px;
     list-style: none;
+}
+
+.navbar .left-side .nav-pages {
+    display: flex;
+    gap: 40px;
+    margin-left: 5vw;
 }
 
 .navbar .right-side {
@@ -48,6 +54,11 @@ body {
     color: var(--violet);
 }
 
+
+.navbar .mobile-nav {
+    display: none;
+}
+
 .btn-primary {
     background: var(--primary);
     color: white;
@@ -56,6 +67,10 @@ body {
     padding: 10px 25px 10px 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+}
+
+button:hover {
+    background: rgb(71, 255, 209);
 }
 
 .navbar img {
@@ -118,7 +133,7 @@ body {
     background-color: var(--primary);
     border: none;
     border-radius: 0.2rem;
-    height: 3vw;
+    height: 10%;
     font-size: 1.0rem;
     font-weight: bold;
     color: white;
@@ -126,9 +141,291 @@ body {
     letter-spacing: 1px;
 }
 
+.container .link-shortener button:hover {
+    background: aqua;
+}
+
 .container .link-shortener input {
     width: 50vw;
-    height: 3vw;
+    height: 10%;
     border-radius: 0.2rem;
     border: none;
+    padding: 10px;
+}
+
+.container .statistics {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    text-align: center;
+    position: relative;
+}
+
+.container .statistics h2{
+    font-size: 3vw;
+}
+
+.container .statistics p{
+    font-size: 1.7vw;
+    color: var(--violet);
+}
+
+.container .statistics .statistics-header {
+    margin-bottom: 3rem;
+}
+
+.container .statistics .cards .card  .icon-bg {
+    background: rgba(58,48,83,255);
+    width: 7vw;
+    height: 7vw;
+    border-radius: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    
+}
+
+.container .statistics .cards .card .icon-bg  img{
+    width: 60%;
+}
+
+.container .statistics .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5%;
+    position: relative;
+}
+
+.container .statistics .cards .card:nth-child(2){
+    margin-top: 50px;
+}
+
+.container .statistics .cards .card:nth-child(3){
+    margin-top: 75px;
+}
+
+.container .statistics .cards .card {
+    background: white;
+    border-radius: 0.5rem;
+    margin: 10px;
+    padding: 5px;
+
+    height: 25vw;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 4vw;
+}
+
+.container .statistics .cards .card h3{
+    font-size: 2vw;
+    margin-top: 70px;
+}
+
+
+.container .statistics .blue-line {
+    width: 600px;
+    height: 1vw;
+    background: var(--primary);
+    position: absolute;
+    z-index: -1;
+    top: 130px;
+    right: -100px;
+}
+
+.container .boost-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    background: rgba(58,48,83,255);
+    background-image: url(images/bg-boost-desktop.svg);
+    color: white;
+    gap: 1rem;
+}
+
+.container .footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: #232027;
+    color: white;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.container .footer ul {
+    list-style: none;
+}
+
+.container .footer li {
+    margin: 8px 0px 8px 0px;
+}
+
+.container .footer a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--violet);
+}
+
+.container .footer .social {
+    margin-right: 10px;
+}
+
+.container .footer .brand {
+    fill: white;
+}
+
+
+
+/* Tablet */
+
+@media only screen and (max-width: 811px) {
+
+    .container .link-shortener {
+        background-image: url(images/bg-boost-desktop.svg);
+        background-size: 150%;
+    }
+
+    .container .statistics .blue-line {
+        top: 80px;
+        right: -200px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 560px) {
+    .navbar {
+        padding: 30px;
+        width: 100%;
+    }
+    
+
+    .navbar .mobile-nav {
+        display: block;
+    }
+
+    .navbar .left-side .nav-pages {
+        display: none;
+    }
+
+    .navbar .right-side {
+        display: none;
+    }
+
+    .container .hero .left-side p{
+        font-size: 2vw;
+    }
+
+    .container .hero .left-side button{
+        font-size: 2.5vw;
+    }
+
+    
+    .container .link-shortener {
+        width: 75%;
+        height: 7rem;
+        background-size: 200%;
+    }
+
+    .container .link-shortener form {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .container .link-shortener button {
+        height: 40%;
+    }
+
+
+    .container .link-shortener input {
+        width: 60vw;
+        height: 40%;
+    }
+
+
+    .container .statistics {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        position: relative;
+    }
+    
+    .container .statistics h2{
+        font-size: 5vw;
+    }
+    
+    .container .statistics p{
+        font-size: 2.5vw;
+    }
+    
+    .container .statistics .statistics-header {
+        margin-bottom: 2rem;
+    }
+
+    .container .statistics .blue-line {
+        display: none;
+    }
+
+
+    .container .statistics .cards{
+        grid-template-columns: 1fr;
+        padding: 10%;
+    }
+    
+    .container .statistics .cards .card:nth-child(2){
+        margin-top: 50px;
+    }
+    
+    .container .statistics .cards .card:nth-child(3){
+        margin-top: 75px;
+    }
+
+    .container .statistics .cards .card {
+        margin: 0px;
+        padding: 40px;
+        height: 50vw;
+        position: relative;
+    }
+
+    .container .statistics .cards .card h3{
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+    .container .statistics .cards .card p{
+        font-size: 3vw;
+    }
+
+    .container .statistics .cards .card  .icon-bg {
+        background: rgba(58,48,83,255);
+        width: 15vw;
+        height: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: absolute;
+        top: -20px;
+        left: 40%;
+        
+    }
+
+    .container .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
