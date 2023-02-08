@@ -287,6 +287,59 @@ button:hover {
     fill: white;
 }
 
+/* Link Shortner */
+
+.container .generated-links {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.container .generated-link {
+    width: 100%;
+    height: 3rem;
+    background: white;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1.5rem 0.5rem 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.9vw;
+    color: var(--dark-violet);
+    margin-bottom: 10px;
+}
+
+.container .generated-link .short-url {
+    color: var(--primary);
+}
+
+.container .generated-link button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.8 rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    letter-spacing: 1px;
+}
+
+.container .generated-link button:hover {
+    opacity: 0.6;
+}
+
+.container .generated-link p{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
 
 
 /* Tablet */
@@ -301,6 +354,11 @@ button:hover {
     .container .statistics .blue-line {
         top: 80px;
         right: -200px;
+    }
+
+
+    .container .generated-link {
+        font-size: 1.2vw;
     }
 
 }
@@ -347,7 +405,7 @@ button:hover {
         background-size: 200%;
     }
 
-    .container .link-shortener form {
+    .container .link-shortener .shorten-form {
         display: flex;
         flex-direction: column;
         gap: 2vw;
@@ -474,4 +532,26 @@ button:hover {
         color: var(--primary);
         cursor: pointer;
     }
+
+    
+    .container .generated-link {
+        height: 8rem;
+        font-weight: 600;
+        font-size: 2.6vw;
+        flex-direction: column;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .container .generated-link button {
+        width: 100%;
+    }
+
+    .container .generated-link .divider {
+        width: 100%;
+        height: 2px;
+        background: #e9e9e9;
+    }
+
+
 }
