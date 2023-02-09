@@ -71,6 +71,7 @@ body {
     padding: 10px 25px 10px 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    font-size: 12px;
 }
 
 button:hover {
@@ -155,6 +156,14 @@ button:hover {
     border-radius: 0.2rem;
     border: none;
     padding: 10px;
+}
+
+.container .clearLinksBtn {
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    color: #7a7a7a;
+    cursor: pointer;
 }
 
 .container .statistics {
@@ -353,12 +362,17 @@ button:hover {
 
     .container .statistics .blue-line {
         top: 80px;
-        right: -200px;
+        right: -150px;
+        width: 400px;
     }
 
 
     .container .generated-link {
         font-size: 1.2vw;
+    }
+
+    .navbar a {
+        font-size: 14px;
     }
 
 }
